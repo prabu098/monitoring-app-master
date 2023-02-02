@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="solar_image">solar_image</string>
+    <string name="hi_user">Hi, User!</string>
+    <string name="have_a_nice_day">Have a nice day</string>
+    <string name="temperature">Temperature</string>
+    <string name="degree">°</string>
+    <string name="humidity">Humidity</string>
+    <string name="rh">RH</string>
+    <string name="cm">cm</string>
+</resources>

@@ -1,0 +1,219 @@
+ <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="26dp"
+        android:src="@drawable/ic_solar_house"
+        android:layout_gravity="end"
+        android:contentDescription="@string/solar_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hi_user"
+        android:textColor="#FF8E80"
+        android:fontFamily="@font/jua_regular"
+        android:layout_marginStart="30dp"
+        android:textSize="19sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/have_a_nice_day"
+        android:textColor="#846190"
+        android:fontFamily="@font/jua_regular"
+        android:layout_marginStart="30dp"
+        android:textSize="30sp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="335dp"
+        android:layout_height="139dp"
+        app:cardBackgroundColor="#6183E3"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="24dp">
+        <RelativeLayout
+            android:id="@+id/card1_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/card1_tv_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="26dp"
+                android:textSize="24sp"
+                android:fontFamily="@font/jua_regular"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/card1_tv_optTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="26dp"
+                android:layout_below="@id/card1_tv_temperature"
+                android:textSize="45sp"
+                android:fontFamily="@font/jua_regular"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/card1_tv_degreeTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/degree"
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="2dp"
+                android:layout_below="@id/card1_tv_temperature"
+                android:layout_toEndOf="@id/card1_tv_optTemperature"
+                android:textSize="45sp"
+                android:fontFamily="@font/jua_regular"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_temperature"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="335dp"
+        android:layout_height="139dp"
+        app:cardBackgroundColor="#FFAF77"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="24dp">
+        <RelativeLayout
+            android:id="@+id/card2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/card2_tv_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/humidity"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="26dp"
+                android:textSize="24sp"
+                android:fontFamily="@font/jua_regular"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/card2_tv_optHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="26dp"
+                android:layout_below="@id/card2_tv_humidity"
+                android:textSize="45sp"
+                android:fontFamily="@font/jua_regular"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/card2_tv_rhHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rh"
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="2dp"
+                android:layout_below="@id/card2_tv_humidity"
+                android:layout_toEndOf="@id/card2_tv_optHumidity"
+                android:textSize="45sp"
+                android:fontFamily="@font/jua_regular"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_humidity"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="335dp"
+        android:layout_height="139dp"
+        app:cardBackgroundColor="#FF696D"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="24dp">
+        <RelativeLayout
+            android:id="@+id/card3_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/card3_tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/distance"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="26dp"
+                android:textSize="24sp"
+                android:fontFamily="@font/jua_regular"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/card3_tv_optDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="26dp"
+                android:layout_below="@id/card3_tv_distance"
+                android:textSize="45sp"
+                android:fontFamily="@font/jua_regular"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/card3_tv_cmDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cm"
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="2dp"
+                android:layout_below="@id/card3_tv_distance"
+                android:layout_toEndOf="@id/card3_tv_optDistance"
+                android:textSize="45sp"
+                android:fontFamily="@font/jua_regular"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_distance"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "375092616651",
+    "firebase_url": "https://petimonitoring-default-rtdb.firebaseio.com",
+    "project_id": "petimonitoring",
+    "storage_bucket": "petimonitoring.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375092616651:android:464ad88ac3d541711aea4e",
+        "android_client_info": {
+          "package_name": "com.gubi.iotapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375092616651-rcsdv1ua1a8ckqurccs3l2251hpdblph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT1PPxGYtzgFFW5PRkbbrTNGyDwbIcszc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375092616651-rcsdv1ua1a8ckqurccs3l2251hpdblph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
